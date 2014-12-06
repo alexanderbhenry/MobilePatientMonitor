@@ -7,8 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AddVitalSignViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <AddVitalSignDelegate>
+
+@property (nonatomic, strong) AddVitalSignViewController *vsPicker;
+@property (nonatomic, strong) UIPopoverController *vsPickerPopover;
+
+- (IBAction)addVitalSign:(id)sender;
 
 
 @end
